@@ -6,13 +6,13 @@ import estilos from './estilos';
 
 export default function App() {
   return (
-    <ScrollView style={ estilos.container }>
+    <View style={ estilos.container }>
       <Image source={ Capa } style={ estilos.imagem }/>
 
       <Text style={ estilos.titulo }>The Beatles</Text>
       <Text style={ estilos.subtitulo }>Help</Text>
 
-      <View>
+      <ScrollView>
         <Text style={ estilos.paragrafo }>
           Help, I need somebody
           Help, not just anybody
@@ -60,7 +60,7 @@ export default function App() {
           Help me, get my feet back on the ground
           Won't you please, please help me?
         </Text>
-      </View>
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 }
